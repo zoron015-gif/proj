@@ -82,7 +82,7 @@ export default function Home() {
                 key={item[0]}
                 className={`store-option ${selected === index ? "selected" : ""}`}
                 onClick={() => setSelected(index)}
-                style={{ backgroundColor: selected === index ? "#ffffff" : storeCardColors[index % storeCardColors.length] }}
+                style={{ background: selected === index ? storeCardColors[index % storeCardColors.length] : "#ffffff" }}
               >
                 <div className="store-card-inner">
                   <div className="store-icon-wrap" style={{ backgroundColor: selected === index ? "#f7f9fb" : storeCardColors[index % storeCardColors.length] }}>
