@@ -114,10 +114,14 @@ li::before { content: "✓"; position: absolute; left: 0; color: #ff6900; font-w
 .coming-soon-copy { color: #52635a; font-weight: 600; }
 .trusted { min-width: 0; margin-top: 8px; padding: 8px 0 6px; overflow: hidden; border-top: 1px solid #edf0ed; background: linear-gradient(180deg, #fff 0%, #fff 100%); }
 .trusted p { margin: 0 0 6px; color: #1b1b1b; font-size: 11px; font-weight: 800; letter-spacing: .8px; text-transform: uppercase; }
-.logo-marquee { width: 100%; overflow: hidden; mask-image: none; -webkit-mask-image: none; }
+.logo-marquee { position: relative; width: 100%; overflow: hidden; mask-image: linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%); -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 10%, #000 90%, transparent 100%); }
+.logo-marquee::before, .logo-marquee::after { content: ""; position: absolute; z-index: 1; top: 0; bottom: 0; width: 72px; pointer-events: none; }
+.logo-marquee::before { left: 0; background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, .82) 38%, transparent 100%); }
+.logo-marquee::after { right: 0; background: linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, .82) 38%, transparent 100%); }
 .logo-track { display: flex; width: max-content; align-items: center; gap: 18px; padding: 0 12px; box-sizing: border-box; animation: logo-scroll 24s linear infinite; }
-.logo-track img { width: 140px; height: 78px; flex: 0 0 140px; padding: 6px 9px; border: 1px solid rgba(0, 0, 0, .12); border-radius: 6px; object-fit: contain; background: #fff; opacity: 1; cursor: pointer; transition: transform .2s ease, filter .2s ease, opacity .2s ease, box-shadow .2s ease, border-color .2s ease; }
-.logo-track img:hover { filter: grayscale(0) brightness(1.05); opacity: 1; border: 3px solid #ff6900; box-shadow: 0 0 0 3px #ff690055, 0 5px 14px #ff690055; transform: scale(1.04); }
+.logo-marquee:hover .logo-track { animation-play-state: paused; }
+.logo-track img { width: 140px; height: 78px; flex: 0 0 140px; padding: 0; border: 0; border-radius: 0; object-fit: contain; background: transparent; opacity: .72; filter: blur(1px); cursor: pointer; transition: transform .2s ease, filter .2s ease, opacity .2s ease; }
+.logo-track img:hover { filter: blur(0) grayscale(0) brightness(1.05); opacity: 1; outline: 3px solid #ff6900; outline-offset: 4px; box-shadow: 0 0 0 6px #ff690033; transform: scale(1.04); }
 @keyframes logo-scroll { from { transform: translateX(0); } to { transform: translateX(calc(-50% - 10px)); } }
 @media (max-width: 700px) { .page { padding: 10px; } .chooser { height: calc(100dvh - 20px); border-radius: 12px; } .chooser-body { grid-template-columns: 1fr; overflow: hidden; height: calc(100% - 170px); } .store-grid { grid-template-rows: repeat(4, max-content); border-right: 0; border-bottom: 1px solid #e2e6e2; padding: 12px; } .preview { padding: 16px 18px; } }
 @media (max-width: 470px) { .store-grid { gap: 10px; padding: 13px; } .store-photo { height: 75px; } .store-option strong { font-size: 8px; } .title-line { width: 25px; } h1 { font-size: 23px; } }
