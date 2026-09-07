@@ -119,9 +119,8 @@ li::before { content: "✓"; position: absolute; left: 0; color: #ff6900; font-w
 .logo-marquee::before { left: 0; background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, .82) 38%, transparent 100%); }
 .logo-marquee::after { right: 0; background: linear-gradient(270deg, #fff 0%, rgba(255, 255, 255, .82) 38%, transparent 100%); }
 .logo-track { display: flex; width: max-content; align-items: center; gap: 18px; padding: 0 12px; box-sizing: border-box; animation: logo-scroll 24s linear infinite; }
-.logo-marquee:hover .logo-track { animation-play-state: paused; }
-.logo-track img { width: 140px; height: 78px; flex: 0 0 140px; padding: 0; border: 0; border-radius: 0; object-fit: contain; background: transparent; opacity: .72; filter: blur(1px); cursor: pointer; transition: transform .2s ease, filter .2s ease, opacity .2s ease; }
-.logo-track img:hover { filter: blur(0) grayscale(0) brightness(1.05); opacity: 1; outline: 3px solid #ff6900; outline-offset: 4px; box-shadow: 0 0 0 6px #ff690033; transform: scale(1.04); }
+.logo-track img { width: 140px; height: 78px; flex: 0 0 140px; padding: 0; border: 0; border-radius: 0; object-fit: contain; background: transparent; opacity: 1; filter: none; cursor: pointer; transition: transform .2s ease, filter .2s ease, opacity .2s ease; }
+.logo-track img:hover { filter: grayscale(0) brightness(1.05); opacity: 1; outline: 3px solid #ff6900; outline-offset: 4px; box-shadow: 0 0 0 6px #ff690033; transform: scale(1.04); }
 @keyframes logo-scroll { from { transform: translateX(0); } to { transform: translateX(calc(-50% - 10px)); } }
 @media (max-width: 1200px) and (min-width: 901px) {
   .page { padding: 16px; }
