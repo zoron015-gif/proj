@@ -73,6 +73,10 @@ h1 span { color: #ff6900; }
   white-space: normal;
 }
 
+.store-option.selected strong {
+  color: #ff6900;
+}
+
 .store-card-arrow {
   position: absolute;
   right: 10px;
