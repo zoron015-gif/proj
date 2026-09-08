@@ -17,7 +17,7 @@ h1 span { color: #ff6900; }
 .title-copy p { margin: 7px 0 9px; color: #52647b; font-family: var(--font-montserrat), Montserrat, Arial, sans-serif; font-size: 15px; font-weight: 400; }
 .title-accent { display: block; width: 75px; height: 2px; margin: auto; background: #ff6900; }
 .chooser-body { display: grid; grid-template-columns: 1.25fr 1fr; height: calc(100% - 170px); min-height: 0; align-items: stretch; }
-.store-grid { min-height: 0; padding: clamp(12px, 2vh, 22px) clamp(16px, 3vw, 52px); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(4, minmax(0, 1fr)); align-content: stretch; gap: clamp(7px, 1vw, 12px); border-right: 1px solid #e2e6e2; background: #f3f3f3; }
+.store-grid { min-height: 0; padding: clamp(12px, 2vh, 22px) clamp(16px, 3vw, 52px); display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(0, 1fr)); align-content: stretch; gap: clamp(7px, 1vw, 12px); border-right: 1px solid #e2e6e2; background: #f3f3f3; }
 .store-option { position: relative;min-width: 0;width: 100%;min-height: 0;height: 100%;overflow: hidden;display: flex;align-items: center;justify-content: center;padding: 16px;background: #ffffff;border: 1px solid #eef0f2;border-radius: 14px;box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);transition: all 0.2s ease-in-out;
 }
 
