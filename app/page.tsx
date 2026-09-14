@@ -13,7 +13,7 @@ const stores: Store[] = [
   ["Pet Shop", "Pet Shop", "/store/petshop.jpg", "Everything for pets", ["Pet food and supplies catalog", "Stock and expiry monitoring", "Customer purchase history", "Fast checkout and sales reports"], false, "Organize pet products, monitor stock, and give customers a faster checkout experience."],
   ["Computer Accessories & Gadgets", "Computer Accessories & Gadgets", "/store/computer.jpg", "Tech and accessories", ["Serial number tracking", "Accessories and inventory management", "Warranty and repair records", "Fast checkout and sales reports"], false, "Sell and manage computer accessories, electronics, and gadgets with simple product tracking."],
   ["Rice Grains & Feeds Trading", "Rice Grains & Feeds Trading", "/store/rice.jpg", "Rice, grains and feeds", ["Bulk product and stock tracking", "Supplier and purchase management", "Wholesale order monitoring", "Sales reports and insights"], false, "Track bulk rice, grains, feeds, purchases, and wholesale orders from one place."],
-  ["Computer, Laptop & Appliance Center", "Computer, Laptop & Appliance Center", "/store/computer and laptops.jpg", "Computers and laptops", ["Serial number and warranty tracking", "Computer and laptop inventory", "Repair and service management", "Sales reports and insights"], false, "Manage computers, laptops, repairs, serial numbers, and warranties with confidence."],
+  [" Appliance Center", " Appliance Center", "/store/computer and laptops.jpg", "Appliances", ["Serial number and warranty tracking", "Appliances inventory", "Repair and service management", "Sales reports and insights"], false, "Manage Appliances, repairs, serial numbers, and warranties with confidence."],
 ];
 
 const storeLogos = [
